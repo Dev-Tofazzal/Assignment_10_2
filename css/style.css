@@ -1,14 +1,209 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Playwrite+CU:wght@100..400&display=swap');
 /* shared style start here */
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+    background-color: black;
+    color: rgb(255, 255, 255);
    
   }
 
+*{
+    margin: 0;
+    padding: 0;
+}
 
+.bg_clr_1{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+}
+
+.container{
+    width: 80%;
+    margin:0 auto ;
+
+   
+}
+
+.spn{
+    font-family: "Playwrite CU", cursive;
+    font-optical-sizing: auto;
+   font-weight: 900;
+   font-style: normal;
+}
+
+.btn_cmn{
+    padding: 10px 40px ;
+    border-radius:42px;
+    -webkit-border-radius:42px;
+    -moz-border-radius:42px;
+    -ms-border-radius:42px;
+    -o-border-radius:42px;
+}
 
 /* shared style end here */
+
+
+/* nav part start here */
+
+.nav_bar{
+    padding-top: 20px ;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav_logo h2{
+    color: rgb(230, 83, 60);
+    font-size: 36px;
+    font-weight: 800;
+}
+.nav{
+    display: flex;
+    align-items: center;
+}
+.nav ul{
+    display: flex;
+    padding: 10px 0px;
+    border-radius: 45px;
+    border: 1px solid rgba(255, 255, 255, 0.1) ;
+    -webkit-border-radius: 45px;
+    -moz-border-radius: 45px;
+    -ms-border-radius: 45px;
+    -o-border-radius: 45px;
+}
+.nav ul li {
+    list-style: none;
+    margin:0 10px ;
+    
+}
+.nav ul li a {
+    padding: 10px 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+.menu{
+    background-color: rgb(230, 83, 60);
+   
+}
+.burga{
+    display: none;
+}
+
+/* nav part end here */
+
+/* banner part start here */
+
+.banner_container{
+    display: grid;
+    grid-template-columns: 1fr 0.5fr;
+    
+    margin-top: 95px;
+}
+.banner_left{
+    padding-top: 20px;
+}
+.banner_left h1{
+    font-size: 4rem;
+    font-weight: 900; 
+  
+}
+.banner_left p{
+    margin: 25px 0;
+    color: rgba(255, 255, 255, 0.5);
+  
+}
+.banner_right{
+  position: relative;
+  text-align: center;
+  
+}
+.pos_free {
+    position: absolute;
+    top: 125px;
+    right: 56px;
+    border-radius: 10px;
+    width: 150px;
+    height: 70px;
+    padding: 10px 10px 0 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+.pos_free p{
+    font-size: 10px;
+}
+.pos_free h3{
+    font-size: 40px;
+    font-weight: 900;
+}
+.pos_tutorial {
+    position: absolute;
+    bottom: 70px;
+    left: -50px;
+    border-radius: 20px;
+    width: 200px;
+    height: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+button{
+    border: none;
+    margin-right: 5px;
+}
+button:first-child{
+    background-color: rgb(230, 83, 60);
+}
+
+
+/* banner part here here */
+
+
+
+/* reponsive part here */
+
+@media screen and (max-width: 576px) {
+   .nav ul{
+    display: none;
+   }
+   .burga{
+    display: block;
+    width: 50px;
+    height: 50px;
+   }
+   .burga > img {
+    width: 50px;
+    height: 50px;
+    
+  }
+  .btn_cmn {
+    padding: 15px 20px;
+    border-radius: 42px;
+   }
+   
+  .banner_container{
+        grid-template-columns: repeat(1,1fr);
+    }
+  .pos_free{
+    top: 60px;
+    right: 10px;
+  }
+  .pos_tutorial {
+    bottom: 250px;
+    left: -30px;
+}
+}
