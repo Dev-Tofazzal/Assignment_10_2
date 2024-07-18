@@ -14,7 +14,12 @@ body {
     margin: 0;
     padding: 0;
 }
-
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
 .bg_clr_1{
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }
@@ -69,7 +74,7 @@ body {
 }
 .nav_logo h2{
     color: rgb(230, 83, 60);
-    font-size: 36px;
+    font-size: 50px;
     font-weight: 800;
 }
 .nav{
@@ -87,14 +92,14 @@ body {
     -o-border-radius: 45px;
 }
 .nav ul li {
-    list-style: none;
+   
     margin:0 10px ;
     
 }
 .nav ul li a {
     padding: 10px 20px;
     color: rgb(255, 255, 255);
-    text-decoration: none;
+   
     border-radius: 40px;
     -webkit-border-radius: 40px;
     -moz-border-radius: 40px;
@@ -315,6 +320,58 @@ button:first-child{
 }
 
 /* team part end here  */
+/* footer part start here */
+.footer{
+    background-color:rgba(255, 255, 255, 0.1) ;
+}
+.footer_container{
+    padding: 40px 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    border-bottom: 1px solid rgb(138, 135, 135);
+}
+.foot_left h2{
+    color: rgb(230, 83, 60);
+    font-size: 50px;
+    font-weight: 800;
+}
+.foot_left p{
+    margin-top: 30px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
+.foot_text{
+    margin-left: 60px;
+}
+.foot_text h2{
+    color: rgb(255, 255, 255);
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+.foot_text li{
+    margin: 20px 0;
+}
+.foot_text a{
+
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 23px;
+    font-weight: 400;
+}
+.foot_copy{
+    text-align: center;
+    padding: 20px 0;
+}
+.foot_copy p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;  
+}
+
+
+/* footer part end here */
 
 
 
@@ -369,5 +426,11 @@ button:first-child{
 .item_row2{
      grid-template-columns: repeat(1,1fr);
     
+}
+.footer_container{
+    grid-template-columns: repeat(1,1fr);
+}
+.foot_text{
+    margin-left:0px;
 }
 }
