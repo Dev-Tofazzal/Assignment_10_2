@@ -60,6 +60,26 @@ a{
     font-size: 14px;
     font-weight: 400;
 }
+table{
+    border-collapse: collapse;
+    margin-top: 40px;
+}
+th{
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-weight: 500;
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400; 
+}
+th,td{
+    border: 1px solid white;
+    padding: 10px;
+    text-align: center;
+}
+
 
 /* shared style end here */
 
@@ -74,7 +94,7 @@ a{
 }
 .nav_logo h2{
     color: rgb(230, 83, 60);
-    font-size: 50px;
+    font-size: 36px;
     font-weight: 800;
 }
 .nav{
@@ -277,6 +297,76 @@ button:first-child{
 
 /* run extra part end here */
 
+/* bmi part start here */
+.bmi{
+    margin-top: 50px;
+    
+}
+.bmi_title{
+    padding-bottom: 50px;
+    text-align: center;
+}
+.bmi_content{
+    background-color:rgb(34, 34, 34) ;
+}
+.bmi_calculator{
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.chart_title h3{
+    color: rgb(255, 255, 255);
+    font-size: 28px;
+    font-weight: 900;
+}
+.chart_title p{
+    margin: 20px 0;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.input_1 input{
+    margin: 5px;
+    background-color: rgba(255, 255, 255, 0.1);
+    padding-left: 5px;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    height:40px ;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+.input_2 input, select
+{   
+    padding-left: 5px;
+    width: 200px;
+    height: 40px;
+    margin: 5px;
+    color:rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+input::placeholder{
+    color: rgba(255, 255, 255, 0.6);
+}
+.input_3 select{
+    width: 420px;
+    color: rgba(255, 255, 255, 0.6);
+}
+.input_3{
+    margin-bottom: 50px;
+}
+/* bmi part end here */
+
 /* team part start here  */
 .team_items{
     margin: 50px 0;
@@ -378,32 +468,32 @@ button:first-child{
 /* reponsive part here */
 
 @media screen and (max-width: 576px) {
-   .nav ul{
+.nav ul{
     display: none;
    }
-   .burga{
+.burga{
     display: block;
     width: 50px;
     height: 50px;
    }
-   .burga > img {
+.burga > img {
     width: 50px;
     height: 50px;
     
   }
-  .btn_cmn {
+.btn_cmn {
     padding: 15px 20px;
     border-radius: 42px;
    }
    
-  .banner_container{
+.banner_container{
         grid-template-columns: repeat(1,1fr);
     }
-  .pos_free{
+.pos_free{
     top: 60px;
     right: 10px;
   }
-  .pos_tutorial {
+.pos_tutorial {
     bottom: 250px;
     left: -30px;
 }
@@ -421,6 +511,19 @@ button:first-child{
 }
 .run_extra_right{
     padding: 20px;
+}
+.bmi_calculator{
+    grid-template-columns: repeat(1,1fr);
+    gap: 40px;
+}
+.input_1 input{
+    width: 150px;
+}
+.input_2 input,select{
+    width: 150px;
+}
+.input_3 select{
+    width: 320px;
 }
 .item_row1,
 .item_row2{
