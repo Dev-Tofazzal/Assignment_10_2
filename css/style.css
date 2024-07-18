@@ -188,12 +188,14 @@ button:first-child{
 
 /* habit part start here */
 
-.change_habit_container{
+.change_habit_container,
+.team_container{
    display: flex;
    justify-content: center;
    text-align: center;
 }
-.change_habit_title{
+.change_habit_title,
+.team_title{
     margin-top: 20px;
 }
 
@@ -270,6 +272,50 @@ button:first-child{
 
 /* run extra part end here */
 
+/* team part start here  */
+.team_items{
+    margin: 50px 0;
+    background-color:rgba(255, 255, 255, 0.1) ;
+   padding: 20px;
+}
+.item_row1,
+.item_row2{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    gap: 30px;
+    
+}
+.item_row1{
+    margin-bottom: 30px;
+}
+.tainer_img{
+    position: relative;
+}
+.tainer_img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 40px;
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+}
+.item_title {
+    position: absolute;
+    bottom: 20px;
+    left: 25px;
+}
+.item_title h2{
+   font-size: 1.5rem;
+   font-weight: 800;
+}
+.item_title p{
+    color:rgba(255, 255, 255, 0.5);
+}
+
+/* team part end here  */
+
 
 
 /* reponsive part here */
@@ -318,5 +364,10 @@ button:first-child{
 }
 .run_extra_right{
     padding: 20px;
+}
+.item_row1,
+.item_row2{
+     grid-template-columns: repeat(1,1fr);
+    
 }
 }
